@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Cultural Tourism Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌍 Smart Cultural Tourism Assistant</h1>
+    <p>Your AI-powered virtual heritage guide</p>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Identify Heritage Site</h2>
+     <div> <input type="text" placeholder="Name"></div>
+     <br>
+     <div> <input type="text" placeholder="E-mail"></div>
+     <br>
+     <div>
+      <input type="file" id="imageUpload" accept="image/*">
+      </div>
+      <br>
+      <button onclick="recognizeImage()">Identify Monument</button>
+    </section>
+
+    <section class="info-section" id="infoSection">
+      <h2>Monument Information</h2>
+      <p id="infoText">Upload an image or enable GPS to get started.</p>
+    </section>
+
+    <section class="controls">
+      <label for="languageSelect">Select Language:</label>
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="fr">French</option>
+        <option value="es">Spanish</option>
+      </select>
+      <button onclick="translateText()">Translate</button>
+      <button onclick="speakText()">🔊 Narrate</button>
+    </section>
+
+    <section class="nearby">
+      <h2>Nearby Attractions</h2>
+      <ul id="nearbyList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Smart Cultural Tourism Assistant | AI for Heritage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
